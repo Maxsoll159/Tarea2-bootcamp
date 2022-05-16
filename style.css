@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,600;0,700;0,900;1,300&family=Fascinate&family=Roboto&display=swap');
+
+body{
+    overflow-x: hidden;
+ }
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;	
+}
+html{
+	scroll-behavior: smooth;
+}
+.conteiner{
+    width: 1440px;
+    margin: auto;
+}
+header{
+    background-color: #9ECEFA;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    font-size: 24px;
+}
+li:nth-child(4){
+    margin-right: 53px;
+}
+
+span{
+    display: none;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-toggle{
+    display: none;
+}
+.menuHTML{
+    display: flex;
+    height: 118px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menuHTML h1{
+    font-size: 52px;
+    color: #87119A;
+    margin-left: 40px;
+    font-family: 'Fascinate', cursive;
+}
+#trickMenu{
+    display: flex;
+}
+.nosotros-titulo{
+    border-left:6px solid #87119A;
+    padding-left: 23px;
+    margin-left: 40px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.nosotros h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #87119A;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 40px;
+    line-height: 30px;
+}
+.nosotros-img{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+    justify-content: space-between;
+}
+.card{
+    width: 410px;
+    height: 251px;
+    transform-style: preserve-3d;
+    transition: transform .75s cubic-bezier(0.4, 0.03, 0.5, 0.9);
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 251px;
+    inset: 0;
+    position: absolute;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+.card img:nth-child(2),
+.card:hover{
+    transform: rotate3d(1,1,0,180deg);
+}
+.servicios-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.portafolio-img{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.medidas{
+    width: 282px;
+    height: 251px;
+}
+.margin-top{
+    margin-top: 30px;
+}
+.contacto-img{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.medidas-contac{
+    width: 892px;
+    height: 545px;
+}
+.info{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.info h3{
+    width: 20%;
+}
+.info p{
+    width: 200px;
+    font-size: 15px;
+}
+footer{
+    background-color: #9ECEFA;
+    height: 77px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .conteiner{
+        width: 100%;
+        margin: auto;
+    }
+    .menuHTML h1{
+        margin: 0;
+    }
+    .nosotros-titulo{
+        margin-left: 0;
+    }
+    p{
+        margin-left: 0;
+    }
+    .nosotros{
+        padding: 10px;
+    }
+    .nosotros-img{
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .card:first-child{
+        margin-bottom: 30px;
+    }
+    .medidas-contac{
+        width: 100%;
+    }
+    .card:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .nosotros-img .card img{
+        width: 350px;
+    }
+    .servicios-img{
+        margin-left: 0;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .servicios-img .card img{
+        width: 350px;
+    }
+    .servicios-img{
+        flex-direction: column;
+    }
+    .portafolio-img{
+        margin-left: 0;
+    }
+    .card-servicios{
+       margin-left: -1px !important;
+    }
+    .ultimo{
+        margin-top: 0 !important;
+        width: 350px;
+    }
+    .contacto-img{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .contacto-img .card{
+        height: 200px;
+    }
+    .contacto-img img{
+        width: 350px;
+    }
+  
+
+    .botonMenu {
+        margin: 0 auto;
+        display: block;
+        width: 40px;
+        height: 36px;
+        padding: 10px;
+        border-radius: 7px;
+        background: #666;
+        color: white;
+        cursor: pointer;
+        position: relative;
+      }
+      
+      .botonMenu span {
+        display: block;
+        width: 40px;
+        height: 4px;
+        background: white;
+        margin-top: 7px;
+      }
+      
+      label {
+        cursor: pointer;
+      }
+      
+      #menu-toggle {
+        display: none;
+      }
+      
+      #trickMenu {
+        display: none;
+        margin-top: 37px;
+        text-align: center;
+        margin-left: -30px;
+        background: white;
+      }
+      #trickMenu li a {
+        display: block;
+        padding-top: 10px;
+        color: black;
+        text-align: center;
+      }
+      
+      #menu-toggle:checked + #trickMenu {
+        display: block;
+      }
+      
+
+}
+
+
